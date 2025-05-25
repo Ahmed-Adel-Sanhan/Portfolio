@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahmed Protofilo</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/b6dfee36af.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/cc2bf47036.js" crossorigin="anonymous"></script>
 
 
  
@@ -48,6 +48,49 @@
                         training, and evaluation using Python libraries like TensorFlow and PyTorch. Passionate about contributing to 
                         impactful projects in fast-paced environments and committed to continuous learning.</p>
                         <div class="tab-titles">
+    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+    <p class="tab-links" onclick="opentab('Education')">Education</p>
+</div>
+
+<div class="tab-contents active-tab" id="Skills">
+    <ul>
+        <li><span>Data Science</span><br>Machine Learning, Deep Learning (GANs, CNNs), EDA, Statistical Analysis</li>
+        <li><span>Visualization</span><br>Power BI, Tableau, Excel, Matplotlib, Seaborn</li>
+        <li><span>Programming</span><br>Python, R, PHP, Java, Dart, C</li>
+        <li><span>Web Technologies</span><br>HTML, CSS, JavaScript, WordPress</li>
+        <li><span>Databases</span><br>MySQL, MongoDB</li>
+        <li><span>Soft Skills</span><br>Teamwork, Problem-Solving, Communication, Leadership</li>
+    </ul>
+</div>
+
+<div class="tab-contents" id="Experience">
+    <ul>
+        <li>
+            <span>Data Scientist Intern - Persatuan Dyslexia Malaysia (Oct 2023 - Feb 2024)</span><br>
+            Developed a dyslexia diagnosis system using deep learning, performed data preprocessing, and used GANs for data augmentation.
+        </li>
+        <li>
+            <span>Web Developer Intern - Bike Bear Sdn Bhd (Aug 2021 - Feb 2022)</span><br>
+            Built and updated websites, migrated content, collaborated with clients and teams to ensure timely project delivery.
+        </li>
+    </ul>
+</div>
+
+<div class="tab-contents" id="Education">
+    <ul>
+        <li>
+            <span>Master of Science in Data Science and Analytics - USM (Graduated: Mar 2024)</span><br>
+            Courses: Machine Learning, Big Data, Visualization, Predictive Analytics, BI, etc.
+        </li>
+        <li>
+            <span>Bachelor of Science in Software Engineering - UMP (Graduated: Jan 2022)</span><br>
+            Achieved Dean's List five times.
+        </li>
+    </ul>
+</div>
+
+                        <!-- <div class="tab-titles">
                             <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
                             <p class="tab-links" onclick="opentab('experience')">Experience</p>
                             <p class="tab-links" onclick="opentab('eduction')">Eduction</p>
@@ -75,7 +118,7 @@
                                 <li><span>UI?UX</span><br>Designing Web Interfaces</li>
 
                             </ul>
-                        </div>
+                        </div> -->
 
                 </div>
             </div>
@@ -84,6 +127,30 @@
 <!-- -----------services----------- -->
 <div id="services">
     <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>Design, develop, and maintain dynamic and responsive websites using HTML, CSS, JavaScript, PHP, and WordPress. Experienced in web design implementation, live site updates, and client-focused development.</p>
+            <!-- <a href="#">Learn more</a> -->
+        </div>
+        <div>
+            <i class="fa-solid fa-brain"></i>
+            <h2>Data Science</h2>
+            <p>Build intelligent systems using machine learning and deep learning (GANs, CNNs). Skilled in model training, evaluation, and deploying AI solutions such as handwriting classification and stroke prediction systems.</p>
+            <!-- <a href="#">Learn more</a> -->
+        </div>
+        <div>
+            <i class="fa-solid fa-chart-line"></i>
+            <h2>Data Analyst</h2>
+            <p>Perform exploratory data analysis, statistical evaluation, and trend visualization using tools like Power BI, Tableau, Excel, and Python libraries. Capable of turning raw data into actionable business insights.</p>
+            <!-- <a href="#">Learn more</a> -->
+        </div>
+    </div>
+</div>
+
+    <!-- <div class="container">
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
             <div>
@@ -106,7 +173,7 @@
             </div>
         </div>
 
-    </div>
+    </div> -->
 </div>
 <!-- ----------portofoilo------------ -->
  <div id="portofoilo">
@@ -114,11 +181,16 @@
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
             <div class="work">
-                <img src="images/f1.png" alt="">
+                <img src="images/GAN.jpeg" alt="">
                 <div class="layer">
-                    <h3>Social Media App</h3>
-                    <p>This app is great</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <h3>GAN-based Augmentation of CNN Models</h3>
+                    <p>Enhancing Handwriting Images Dataset using GAN-based Augmentation of CNN Models for Classification Dyslexia Severity</p>
+                    <!-- <a href="#"><i class="fa-solid ">Download</i></a> -->
+                    <div class="btgroup">
+                    <a href="assets/GAN_Report.pdf" target="_blank" download class="lbtn btn1">Download Report</a>
+                    <!-- <a href="assets/Ahmed_Adel_Sanhan_Al-Haidary _CV.pdf" target="_blank" download class="lbtn btn1">Download Report</a> -->
+                    </div>
+
                 </div>
             </div>
             <div class="work">
@@ -151,11 +223,11 @@
                 <p class="email1"><i class="fa-solid fa-paper-plane"></i><a href="mailto:ahmed.ad.sanhan@gmail.com"  > ahmed.ad.sanhan@gmail.ccom</a></p>
                 <p><i class="fa-solid fa-square-phone"></i> +966 537352252</p>
                 <div class="social-icons">
-                    <a href="https://web.whatsapp.com/send/?phone=966537352252"><i class="fa-brands fa-square-whatsapp"></i></a>
-                    <a href="https://github.com/Ahmed-Adel-Sanhan"><i class="fa-brands fa-square-github"></i></a>
-                    <a href="https://www.linkedin.com/in/ahmed-al-haidary-685136215/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://web.whatsapp.com/send/?phone=966537352252" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a>
+                    <a href="https://github.com/Ahmed-Adel-Sanhan" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ahmed-al-haidary-685136215/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
-                <a href="images/my_CV.pdf" target="_blank" download class="btn btn2">Download CV</a>
+                <a href="assets/Ahmed_Adel_Sanhan_Al-Haidary _CV.pdf" target="_blank" download class="btn btn2">Download CV</a>
             
             </div>
             <div class="contact-right">
@@ -182,7 +254,7 @@
         </div>
     </div>
     <div class="copyright">
-        <p>Copyright © Ahmed Adel 2024.</p>
+        <p>Copyright © Ahmed Adel 2025.</p>
     </div>
 </div>
     <script>

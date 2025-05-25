@@ -223,7 +223,7 @@ nav ul li a:hover::after{
     margin-bottom: 20px;
 
 }
-.layer a{
+/* .layer a{
     margin-top: 20px;
     color: #ff004f;
     text-decoration: none;
@@ -234,16 +234,10 @@ nav ul li a:hover::after{
     height: 60px;
     border-radius: 50%;
     text-align: center;
+    
 
-}
-.work:hover img{
-    transform: scale(1.1);
-
-}
-.work:hover .layer{
-    height: 100%;
-}
-.btn {
+} */
+ .btn {
     display: block;
     margin: 50px auto;
     width: fit-content;
@@ -256,6 +250,56 @@ nav ul li a:hover::after{
 
 
 }
+/* .lbtn {
+    display: inline-flex;
+     margin: 50px auto; 
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s;
+
+
+} */
+ .btgroup{
+    display: flex;
+    gap: 20px;
+ }
+ .lbtn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    margin-top: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s;
+    /* background: transparent; */
+}
+.lbtn:hover{
+    background: black;
+
+}
+.lbtn.btn1{
+    display: inline-block;
+    /* background: black; */
+
+    /* background: white; */
+    
+
+}
+.work:hover img{
+    transform: scale(1.1);
+
+}
+.work:hover .layer{
+    height: 100%;
+}
+
 .btn:hover{
     background: #ff004f;
 
@@ -280,7 +324,7 @@ nav ul li a:hover::after{
 .social-icons a{
     text-decoration: none;
     font-size: 30px;
-    margin-left: 15px;
+    margin-right: 15px;
     color: #ababab;
     display: inline-block;
     transition: transform 0.5s;
@@ -391,5 +435,14 @@ nav .fa-solid{
     .copyright{
         font-size: 14px;
     }
+     .btgroup{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+ }
+ .lbtn {
+    margin-top: 0px;
+ }
+ 
 
 }
