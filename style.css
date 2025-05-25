@@ -182,12 +182,32 @@ nav ul li a:hover::after{
     padding: 50px 0;
 
 }
+/* .work-slider {
+    overflow-x: auto;
+    padding-bottom: 20px;
+} */
+/* .work-list {
+    display: flex;
+    gap: 40px;
+    margin-top: 50px;
+    flex-wrap: nowrap;
+    scroll-behavior: smooth;
+} */
 .work-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
+ /* .work {
+    min-width: 300px;
+    max-width: 300px;
+    flex-shrink: 0;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.5s;
+} */
 .work{
     border-radius: 10px;
     position: relative;
@@ -221,7 +241,11 @@ nav ul li a:hover::after{
 .layer h3{
     font-weight: 500;
     margin-bottom: 20px;
+}
 
+
+.hidden-work {
+  display: none;
 }
 /* .layer a{
     margin-top: 20px;

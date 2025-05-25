@@ -149,6 +149,7 @@
  <div id="portofoilo">
     <div class="container">
         <h1 class="sub-title">My Work</h1>
+        
         <div class="work-list">
             <div class="work">
                 <img src="images/iGAN.png" alt="">
@@ -175,19 +176,69 @@
 
                 </div>
             </div>
-            <div class="work">
-                <img src="images/Landscape.png" alt="">
-                  <div class="layer">
-                    <h3>Musical Preference & Popularity Prediction</h3>
-                    <p>utilizing Market Basket Analysis, Regression, and Recommendation System methodologies</p>
+                <div class="work">
+                <img src="images/Power_BI.png" alt="">
+                <div class="layer">
+                    <h3>Mall Sales and Consumer Insights.</h3>
+                    <p>Using Power BI to Anaalysis the Customer Behaviour.</p>
                     <div class="btgroup">
-                    <a href="assets/Landscape_Report.pdf" target="_blank" download class="lbtn btn1">Download Report</a>
+                    <a href="assets/PowerBI_Report.pdf" target="_blank" download class="lbtn btn1">Download Report</a>
                     <!-- <a href="assets/Ahmed_Adel_Sanhan_Al-Haidary _CV.pdf" target="_blank" download class="lbtn btn1">Download Report</a> -->
                     </div>
-                    </div>
+
+                </div>
             </div>
+                <!-- <div class="more-projects" style="display: none;"> -->
+                <div class="work hidden-work">
+                    <img src="images/Predictive.png" alt="">
+                    <div class="layer">
+                        <h3>Walmart Sales Forecasting Systems.</h3>
+                        <p>Using ARIMA Statistical Model & XGboost Model.</p>
+                        <div class="btgroup">
+                        <a href="assets/Forcast_Report.pdf" target="_blank" download class="lbtn btn1">Download Report</a>
+                        <!-- <a href="assets/Ahmed_Adel_Sanhan_Al-Haidary _CV.pdf" target="_blank" download class="lbtn btn1">Download Report</a> -->
+                        </div>
+
+                    </div>
+                </div>
+                <div class="work hidden-work">
+                    <img src="images/Brain.png" alt="">
+                    <div class="layer">
+                        <h3>Brain Strokes Forecasting.</h3>
+                        <p> Building Machine Learning Alghorithems Using R to Aid in the Forecasting of Brain Strokes.</p>
+                        <div class="btgroup">
+                        <a href="assets/Brain_Report.pdf" target="_blank" download class="lbtn btn1">Download Report</a>
+                        <!-- <a href="assets/Ahmed_Adel_Sanhan_Al-Haidary _CV.pdf" target="_blank" download class="lbtn btn1">Download Report</a> -->
+                        </div>
+
+                    </div>
+                </div>
+                <div class="work hidden-work">
+                    <img src="images/Snakor.png" alt="">
+                    <div class="layer">
+                        <h3>Snake Identification App.</h3>
+                        <p> Building Mobile App using Fluter to Identify the Snake Type.</p>
+                        <div class="btgroup">
+                        <a href="assets/Snakor_Report.pdf" target="_blank" download class="lbtn btn1">Download Report</a>
+                        <!-- <a href="assets/Ahmed_Adel_Sanhan_Al-Haidary _CV.pdf" target="_blank" download class="lbtn btn1">Download Report</a> -->
+                        </div>
+
+                    </div>
+                </div>
+                <div class="work hidden-work">
+                    <img src="images/Landscape.png" alt="">
+                    <div class="layer">
+                        <h3>Musical Preference & Popularity Prediction</h3>
+                        <p>utilizing Market Basket Analysis, Regression, and Recommendation System methodologies</p>
+                        <div class="btgroup">
+                        <a href="assets/Landscape_Report.pdf" target="_blank" download class="lbtn btn1">Download Report</a>
+                        <!-- <a href="assets/Ahmed_Adel_Sanhan_Al-Haidary _CV.pdf" target="_blank" download class="lbtn btn1">Download Report</a> -->
+                        </div>
+                        </div>
+                </div>
+            <!-- </div> -->
         </div>
-        <a href="#" class="btn">See more</a>
+        <a href="#" class="btn" id="toggleBtn">See more</a>
 
     </div>
  </div>
@@ -322,6 +373,23 @@
                 });
             });
           </script>
+            <script>
+        const toggleBtn = document.getElementById("toggleBtn");
+        const hiddenWorks = document.querySelectorAll(".hidden-work");
+        let isExpanded = false;
+
+        toggleBtn.addEventListener("click", function (e) {
+            e.preventDefault();
+            isExpanded = !isExpanded;
+
+            hiddenWorks.forEach(work => {
+            work.style.display = isExpanded ? "block" : "none";
+            });
+
+            toggleBtn.textContent = isExpanded ? "Show less" : "See more";
+        });
+        </script>
+
 
 </body>
 </html>
